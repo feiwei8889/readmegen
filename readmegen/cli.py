@@ -240,9 +240,9 @@ def main(template, name, tagline, output, list_flag, preview, quick, json_input)
     console.print(Panel.fit(
         "[bold yellow]🔥 Love readmegen?[/bold yellow]\n"
         "[dim]Get the Pro version with 20+ exclusive templates, custom branding, and priority support.[/dim]\n"
-        "[bold cyan]→ gumroad.com/l/readmegen-pro[/bold cyan]\n\n"
+        "[bold cyan]→ ko-fi.com/feiwei8889[/bold cyan]\n\n"
         "[dim]Or sponsor the project on GitHub:[/dim]\n"
-        "[bold cyan]→ github.com/sponsors/feiwei8889[/bold cyan]",
+        "[bold cyan]→ ko-fi.com/feiwei88898889[/bold cyan]",
         border_style="yellow"
     ))
 

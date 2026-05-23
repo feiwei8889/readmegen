@@ -1,8 +1,21 @@
 # readmegen
 
-![License](https://img.shields.io/badge/License-MIT-blue.svg) ![Version](https://img.shields.io/badge/version-1.0.0-brightgreen.svg) ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg?logo=python) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg) [![Ko-fi](https://img.shields.io/badge/Ko--fi-Donate%20%245-ff5e5b?logo=kofi&logoColor=white)](https://ko-fi.com/feiwei8889)
+![License](https://img.shields.io/badge/License-MIT-blue.svg) ![Version](https://img.shields.io/badge/version-1.0.0-brightgreen.svg) ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg?logo=python) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg) [![Ko-fi](https://img.shields.io/badge/Ko--fi-Donate%20%245-ff5e5b?logo=ko-fi&logoColor=white)](https://ko-fi.com/feiwei8889) [![Ko-fi](https://img.shields.io/badge/Ko--fi-Donate%20%245-ff5e5b?logo=kofi&logoColor=white)](https://ko-fi.com/feiwei8889)
 
 > Beautiful README generator for your GitHub projects — 12 professional templates in seconds
+
+
+---
+
+<p align="center">
+  <a href="https://ko-fi.com/feiwei8889">
+    <img src="https://img.shields.io/badge/🔥_Get_readmegen_Pro-$5-ff5e5b?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Get readmegen Pro for $5">
+  </a>
+</p>
+
+> **Love readmegen?** Get the [Pro version for $5](https://ko-fi.com/feiwei8889) — 20+ exclusive templates, AI-powered suggestions, custom branding, and priority support. Click the button above to upgrade!
+
+---
 
 ## 📑 Table of Contents
 
@@ -132,7 +145,7 @@ Love readmegen? Get the **Pro version** with:
 - ⚡ **Priority Support** — Direct line to the maintainer
 - 🔄 **Auto-update Badges** — Keep your badges always current
 
-**[Get readmegen Pro on Gumroad — $5](https://gumroad.com/l/readmegen-pro)**
+**[Get readmegen Pro — $5 on Ko-fi](https://ko-fi.com/feiwei8889)**
 
 ## 🤝 Contributing
 
@@ -159,5 +172,5 @@ MIT © feiwei
   •
   <a href="https://github.com/sponsors/feiwei8889">💖 Sponsor</a>
   •
-  <a href="https://gumroad.com/l/readmegen-pro">🔥 Get Pro ($5)</a>
+  <a href="https://ko-fi.com/feiwei8889">🔥 Get Pro ($5)</a>
 </p>

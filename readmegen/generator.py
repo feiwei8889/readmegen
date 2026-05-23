@@ -114,7 +114,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines."""
 <p align="center">
   <a href="https://github.com/{author}/{repo_name}">⭐ Star us on GitHub!</a>
   •
-  <a href="https://gumroad.com/l/readmegen-pro">🔥 Get readmegen Pro</a>
+  <a href="https://ko-fi.com/feiwei8889">🔥 Get readmegen Pro</a>
 </p>""".format(author=github_username, repo_name=name.lower().replace(" ", "-"))
 
     # Additional template variables
