@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "readmegen"
+version = "1.0.0"
+description = "Beautiful README generator for your GitHub projects — 12 professional templates, interactive mode, badges, and more"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+dependencies = [
+    "rich>=13.0",
+    "pyyaml>=6.0",
+    "click>=8.0",
+]
+authors = [
+    {name = "readmegen contributors"}
+]
+keywords = ["readme", "github", "markdown", "documentation", "generator", "cli"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Documentation",
+    "Topic :: Utilities",
+]
+
+[project.scripts]
+readmegen = "readmegen.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/feiwei/readmegen"
+"Bug Tracker" = "https://github.com/feiwei/readmegen/issues"
+"Sponsor" = "https://github.com/sponsors/feiwei"
