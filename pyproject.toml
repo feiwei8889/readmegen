@@ -37,6 +37,6 @@ classifiers = [
 readmegen = "readmegen.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/feiwei/readmegen"
-"Bug Tracker" = "https://github.com/feiwei/readmegen/issues"
-"Sponsor" = "https://github.com/sponsors/feiwei"
+Homepage = "https://github.com/feiwei8889/readmegen"
+"Bug Tracker" = "https://github.com/feiwei8889/readmegen/issues"
+"Sponsor" = "https://ko-fi.com/feiwei8889"

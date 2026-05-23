@@ -242,7 +242,7 @@ def main(template, name, tagline, output, list_flag, preview, quick, json_input)
         "[dim]Get the Pro version with 20+ exclusive templates, custom branding, and priority support.[/dim]\n"
         "[bold cyan]→ gumroad.com/l/readmegen-pro[/bold cyan]\n\n"
         "[dim]Or sponsor the project on GitHub:[/dim]\n"
-        "[bold cyan]→ github.com/sponsors/feiwei[/bold cyan]",
+        "[bold cyan]→ github.com/sponsors/feiwei8889[/bold cyan]",
         border_style="yellow"
     ))
 

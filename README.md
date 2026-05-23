@@ -61,7 +61,7 @@ pip install readmegen
 Or install from source:
 
 ```bash
-git clone https://github.com/feiwei/readmegen.git
+git clone https://github.com/feiwei88898889/readmegen.git
 cd readmegen
 pip install -e .
 ```
@@ -151,13 +151,13 @@ MIT © feiwei
 ---
 
 <p align="center">
-  <sub>Made with ❤️ by <a href="https://github.com/feiwei">feiwei</a></sub>
+  <sub>Made with ❤️ by <a href="https://github.com/feiwei8889">feiwei</a></sub>
 </p>
 
 <p align="center">
-  <a href="https://github.com/feiwei/readmegen">⭐ Star us on GitHub!</a>
+  <a href="https://github.com/feiwei88898889/readmegen">⭐ Star us on GitHub!</a>
   •
-  <a href="https://github.com/sponsors/feiwei">💖 Sponsor</a>
+  <a href="https://github.com/sponsors/feiwei8889">💖 Sponsor</a>
   •
   <a href="https://gumroad.com/l/readmegen-pro">🔥 Get Pro ($5)</a>
 </p>
