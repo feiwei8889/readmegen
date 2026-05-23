@@ -1,6 +1,6 @@
 # readmegen
 
-![License](https://img.shields.io/badge/License-MIT-blue.svg) ![Version](https://img.shields.io/badge/version-1.0.0-brightgreen.svg) ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg?logo=python) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+![License](https://img.shields.io/badge/License-MIT-blue.svg) ![Version](https://img.shields.io/badge/version-1.0.0-brightgreen.svg) ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg?logo=python) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg) [![Ko-fi](https://img.shields.io/badge/Ko--fi-Donate%20%245-ff5e5b?logo=kofi&logoColor=white)](https://ko-fi.com/feiwei8889)
 
 > Beautiful README generator for your GitHub projects — 12 professional templates in seconds
 
