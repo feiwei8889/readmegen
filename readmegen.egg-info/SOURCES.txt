@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+readmegen/__init__.py
+readmegen/cli.py
+readmegen/generator.py
+readmegen/templates.py
+readmegen.egg-info/PKG-INFO
+readmegen.egg-info/SOURCES.txt
+readmegen.egg-info/dependency_links.txt
+readmegen.egg-info/entry_points.txt
+readmegen.egg-info/requires.txt
+readmegen.egg-info/top_level.txt

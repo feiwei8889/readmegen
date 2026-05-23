@@ -132,7 +132,7 @@ def show_template_preview(template_name):
 @click.option("--list", "list_flag", is_flag=True, help="List all available templates")
 @click.option("--preview", "-p", help="Preview a template without generating")
 @click.option("--quick", "-q", is_flag=True, help="Quick mode — fewer prompts, faster")
-@click.option("--json-input", "json_file", help="Read project info from JSON file")
+@click.option("--json-input", "json_input", help="Read project info from JSON file")
 def main(template, name, tagline, output, list_flag, preview, quick, json_input):
     """readmegen — Generate beautiful README.md files for your GitHub projects."""
 
@@ -144,47 +144,70 @@ def main(template, name, tagline, output, list_flag, preview, quick, json_input)
         show_template_preview(preview)
         return
 
-    show_banner()
+    non_interactive = bool(name or json_input)
+
+    if not non_interactive:
+        show_banner()
 
     # Load from JSON if provided
     if json_input:
         with open(json_input) as f:
             info = json.load(f)
         console.print(f"[green]✓[/green] Loaded project info from {json_input}")
+        # CLI overrides for JSON mode
+        if name:
+            info["name"] = name
+        if tagline:
+            info["tagline"] = tagline
+    elif name:
+        # Non-interactive mode: build info from defaults + CLI args
+        info = {
+            "name": name,
+            "tagline": tagline or f"{name} - a powerful tool",
+            "description": f"{name} is a powerful tool that helps you get things done faster.",
+            "features": "Fast, Reliable, Easy to use",
+            "install_method": "pip",
+            "install_cmd": f"pip install {name.lower().replace(' ', '-')}",
+            "usage_example": f"{name.lower().replace(' ', '-')} --help",
+            "license": "MIT",
+            "author": "",
+            "repo_url": "",
+            "badges": "license, stars, version",
+            "toc": True,
+            "contributing": True,
+            "screenshots": False,
+        }
     else:
         info = collect_project_info(quick=quick)
-
-    # Override with CLI args
-    if name:
-        info["name"] = name
-    if tagline:
-        info["tagline"] = tagline
     if not template:
-        # Choose template
-        template_names = list(TEMPLATES.keys())
-        console.print()
-        template_table = Table(title="Available Templates", box=box.ROUNDED, border_style="cyan")
-        template_table.add_column("#", style="dim", width=4)
-        template_table.add_column("Template", style="cyan")
-        template_table.add_column("Description", style="green")
-        template_table.add_column("Best for", style="yellow")
-
-        for i, (tname, tdata) in enumerate(TEMPLATES.items(), 1):
-            template_table.add_row(str(i), tname, tdata["description"], tdata["best_for"])
-
-        console.print(template_table)
-        console.print()
-
-        choice = Prompt.ask(
-            "[bold cyan]Choose template[/bold cyan] (number or name)",
-            default="1"
-        )
-        if choice.isdigit():
-            idx = int(choice) - 1
-            if 0 <= idx < len(template_names):
-                template = template_names[idx]
+        if non_interactive:
+            template = "default"
         else:
-            template = choice if choice in TEMPLATES else "default"
+            # Choose template interactively
+            template_names = list(TEMPLATES.keys())
+            console.print()
+            template_table = Table(title="Available Templates", box=box.ROUNDED, border_style="cyan")
+            template_table.add_column("#", style="dim", width=4)
+            template_table.add_column("Template", style="cyan")
+            template_table.add_column("Description", style="green")
+            template_table.add_column("Best for", style="yellow")
+
+            for i, (tname, tdata) in enumerate(TEMPLATES.items(), 1):
+                template_table.add_row(str(i), tname, tdata["description"], tdata["best_for"])
+
+            console.print(template_table)
+            console.print()
+
+            choice = Prompt.ask(
+                "[bold cyan]Choose template[/bold cyan] (number or name)",
+                default="1"
+            )
+            if choice.isdigit():
+                idx = int(choice) - 1
+                if 0 <= idx < len(template_names):
+                    template = template_names[idx]
+            else:
+                template = choice if choice in TEMPLATES else "default"
 
     console.print(f"\n[green]Using template:[/green] [bold]{template}[/bold]")
 
@@ -206,7 +229,7 @@ def main(template, name, tagline, output, list_flag, preview, quick, json_input)
     ))
 
     # Show preview
-    if Confirm.ask("\n[bold cyan]Preview in terminal?[/bold cyan]", default=True):
+    if not non_interactive and Confirm.ask("\n[bold cyan]Preview in terminal?[/bold cyan]", default=True):
         console.print()
         console.print(Panel(Markdown(readme[:3000]), title="README Preview", border_style="blue"))
         if len(readme) > 3000:
